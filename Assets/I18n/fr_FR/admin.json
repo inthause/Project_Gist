@@ -1,0 +1,14 @@
+{
+	"module_name":{
+		"message":"Module d'exemples"
+	},
+	"module_keywords":{
+		"message":"test,gist"
+	},
+	"template_test_label":{
+		"message":"Template de test"
+	},
+	"mon_param_de_test":{
+		"message":"un parametre de test"
+	}
+}

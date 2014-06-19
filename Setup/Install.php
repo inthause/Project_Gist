@@ -19,9 +19,10 @@ class Install extends \Change\Plugins\InstallBase
 	 * @param \Change\Configuration\EditableConfiguration $configuration
 	 * @throws \RuntimeException
 	 */
-//	public function executeApplication($plugin, $application, $configuration)
-//	{
-//	}
+	public function executeApplication($plugin, $application, $configuration)
+	{
+		$configuration->addPersistentEntry('Change/Events/BlockManager/Project_Gist', '\Project\Gist\Blocks\Listeners');
+	}
 
 	/**
 	 * @param \Zend\EventManager\EventManagerInterface $events
