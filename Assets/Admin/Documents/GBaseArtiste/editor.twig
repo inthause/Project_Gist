@@ -1,0 +1,37 @@
+<div data-project-gist-gbase-artiste-editor="">
+
+	<div data-ng-if="!localization.inTranslation()">
+		<rbs-field-text property="label" required="true"
+				label="{{ i18nAttr(propertyKey('Project_Gist_GBaseArtiste', 'label'), ['ucf']) }}">
+		</rbs-field-text>
+
+		<rbs-field-text property="pString"
+				label="{{ i18nAttr(propertyKey('Project_Gist_GBaseArtiste', 'pString'), ['ucf']) }}">
+		</rbs-field-text>
+
+		<rbs-field-date property="pDate"
+				label="{{ i18nAttr(propertyKey('Project_Gist_GBaseArtiste', 'pDate'), ['ucf']) }}">
+		</rbs-field-date>
+
+		<rbs-field property="pDocument" label="{{ i18nAttr(propertyKey('Project_Gist_GBaseArtiste', 'pDocument'), ['ucf']) }}">
+			<rbs-document-picker-single  name="pDocument" ng-model="document.pDocument" accepted-model="Rbs_Media_Image"
+					property-label="PDocument" context-key="(= getContextKey() =)_pDocument">
+			</rbs-document-picker-single>
+		</rbs-field>
+
+		<rbs-field-rich-text property="pRichText"
+				label="{{ i18nAttr(propertyKey('Project_Gist_GBaseArtiste', 'pRichText'), ['ucf']) }}">
+		</rbs-field-rich-text>
+
+		<rbs-field property="pDocumentArray" label="{{ i18nAttr(propertyKey('Project_Gist_GBaseArtiste', 'pDocumentArray'), ['ucf']) }}">
+			<rbs-document-picker-multiple name="pDocumentArray" ng-model="document.pDocumentArray"  accepted-model="Rbs_Media_Image"
+					property-label="PDocumentArray" context-key="(= getContextKey() =)_pDocumentArray">
+			</rbs-document-picker-multiple>
+		</rbs-field>
+	</div>
+
+	<rbs-field property="lRichText"
+			label="{{ i18nAttr(propertyKey('Project_Gist_GBaseArtiste', 'lRichText'), ['ucf']) }}">
+		<rbs-rich-text-input ng-model="document.LCID[localization.currentLCID()].lRichText" ></rbs-rich-text-input>
+	</rbs-field>
+</div>

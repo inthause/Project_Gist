@@ -1,0 +1,10 @@
+{
+	"entries": [
+		{
+			"label": "m.project.gist.admin.module_name",
+			"url": "Project/Gist/",
+			"section": "cms",
+			"keywords": "m.project.gist.admin.module_keywords"
+		}
+	]
+}

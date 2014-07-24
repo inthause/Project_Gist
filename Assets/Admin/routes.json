@@ -1,0 +1,49 @@
+{
+	"/Project/Gist/": {
+		"module": "Project_Gist",
+		"name": "home",
+		"rule": {
+			"redirectTo": "/Project/Gist/GBase/",
+			"labelKey": "m.project.gist.admin.module_name | ucf"
+		},
+		"auto": true
+	},
+	"/Project/Gist/GBase/": {
+		"model": "Project_Gist_GBase",
+		"name": "list",
+		"rule": {
+			"templateUrl": "Document/Project/Gist/GBase/list.twig",
+			"labelKey": "m.project.gist.admin.gbase_list | ucf"
+		},
+		"auto": true
+	},
+	"/Project/Gist/GBase/:id": {
+		"model": "Project_Gist_GBase",
+		"name": "edit",
+		"rule": {
+			"templateUrl": "Document/Project/Gist/GBase/edit.twig",
+			"labelKey": "m.project.gist.documents.gbase | ucf",
+			"labelId": "id"
+		},
+		"auto": true
+	},
+	"/Project/Gist/GBase/:id/translate/:LCID": {
+		"model": "Project_Gist_GBase",
+		"name": "translate",
+		"rule": {
+			"templateUrl": "Document/Project/Gist/GBase/translate.twig",
+			"controller": "RbsChangeTranslateEditorController",
+			"labelKey": "m.rbs.admin.admin.translation | ucf"
+		},
+		"auto": true
+	},
+	"/Project/Gist/GBase/new": {
+		"model": "Project_Gist_GBase",
+		"name": "new",
+		"rule": {
+			"templateUrl": "Document/Project/Gist/GBase/new.twig",
+			"labelKey": "m.rbs.admin.adminjs.new_resource | ucf"
+		},
+		"auto": true
+	}
+}

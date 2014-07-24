@@ -10,5 +10,8 @@
 	},
 	"mon_param_de_test":{
 		"message":"un parametre de test"
+	},
+	"gbase_create":{
+		"message":"ajouter gbase"
 	}
 }

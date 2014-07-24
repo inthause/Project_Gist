@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.rbs.fr/schema/change-document/4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/4.0 http://www.rbschange.fr/schema/4.0/document.xsd" 
+	localized="true" editable="true" publishable="true">
+	<properties>
+		<property name="title" has-correction="true" />
+		<property name="publicationSections" type="DocumentArray" document-type="Rbs_Website_Section" />
+		<property name="elements" type="InlineArray" >
+			<inline name="GElement" activable="true"  editable="true" localized="true">
+				<properties>
+					<property name="pDocument" type="Document" document-type="Rbs_Media_Image"/>
+					<property name="pDocumentArray" type="DocumentArray"  document-type="Rbs_Media_Image" />
+					<property name="pDocId" type="DocumentId" document-type="Rbs_Media_Image" />
+					<property name="pRichText" type="RichText" />
+					<property name="lString" type="String" localized="true" />
+					<property name="lDocId" type="DocumentId" localized="true" document-type="Rbs_Media_Image" />
+					<property name="lRichText" type="RichText" localized="true" />
+				</properties>
+			</inline>
+		</property>
+		<property name="artiste" type="Inline">
+			<inline name="GBaseArtiste" editable="true" localized="true" >
+				<properties>
+					<property name="pString" type="String" localized="true" />
+					<property name="pDate" type="Date" />
+					<property name="pDocument" type="Document" document-type="Rbs_Media_Image" />
+					<property name="pDocumentArray" type="DocumentArray"  document-type="Rbs_Media_Image" />
+					<property name="pDocId" type="DocumentId" document-type="Rbs_Media_Image" />
+					<property name="pRichText" type="RichText" />
+					<property name="lDocId" type="DocumentId" localized="true" />
+					<property name="lRichText" type="RichText" localized="true" />
+				</properties>
+			</inline>
+		</property>
+	</properties>
+</document>
