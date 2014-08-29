@@ -1,0 +1,37 @@
+{
+	"documents": [
+		{
+			"_id": "project_gist_test_mail",
+			"_model": "Rbs_Mail_Mail",
+			"useCache": false,
+			"TTL": 0,
+			"code": "project_gist_test_mail",
+			"substitutions": ["orderId"],
+			"label": "Test de mail",
+			"versionOfId": 0,
+			"template":{"_id": "mail_template"},
+			"_LCID": {
+				"fr_FR":{
+					"editableContent": {
+						"mainContent": {
+							"id": "mainContent",
+							"grid": 12,
+							"type": "container",
+							"items":[
+								{
+									"type": "block", "name": "Project_Gist_MailTest", "id": 2, "label": "Project_Gist_MailTest",
+									"parameters": {
+										"TTL": 0
+									}
+								}
+							]
+						}
+					},
+					"subject": "Test de mail",
+					"active": true
+				}
+			}
+		}
+	],
+	"contextId": "Project Gist Mail Install"
+}

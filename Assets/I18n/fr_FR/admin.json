@@ -13,5 +13,8 @@
 	},
 	"gbase_create":{
 		"message":"ajouter gbase"
+	},
+	"mail_test":{
+		"message":"test order"
 	}
 }

@@ -22,6 +22,7 @@ class Install extends \Change\Plugins\InstallBase
 	public function executeApplication($plugin, $application, $configuration)
 	{
 		$configuration->addPersistentEntry('Change/Events/BlockManager/Project_Gist', '\Project\Gist\Blocks\Listeners');
+		$configuration->addPersistentEntry('Rbs/Mail/Events/MailManager/Project_Gist', '\Project\Gist\Mail\Listeners');
 	}
 
 	/**

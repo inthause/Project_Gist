@@ -1,20 +1,11 @@
 <?php
-/**
- * Copyright (C) 2014 Eric Hauswald
- *
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- */
-namespace Project\Gist\Blocks;
+namespace Project\Gist\Mail;
 
-use Change\Presentation\Blocks\Standard\UpdateBlockInformation;
-use Change\Presentation\Blocks\Standard\RegisterByBlockName;
 use Zend\EventManager\EventManagerInterface;
 use Zend\EventManager\ListenerAggregateInterface;
 
 /**
- * @name \Project\Gist\Blocks\Listeners
+ * @name \Project\Gist\Mail\Listeners
  */
 class Listeners implements ListenerAggregateInterface
 {
@@ -27,10 +18,11 @@ class Listeners implements ListenerAggregateInterface
 	 */
 	public function attach(EventManagerInterface $events)
 	{
-		new UpdateBlockInformation('Rbs_Website_XhtmlTemplate', $events,
-			function($event) {(new Update())->onUpdateXhtmlTemplateInformation($event);});
-
-		new RegisterByBlockName('Project_Gist_MailTest', true, $events);
+		$callback = function ($event)
+		{
+			(new \Project\Gist\Mail\InstallMails())->execute($event);
+		};
+		$events->attach('installMails', $callback, 5);
 	}
 
 	/**
