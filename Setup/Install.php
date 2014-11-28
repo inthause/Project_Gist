@@ -23,6 +23,10 @@ class Install extends \Change\Plugins\InstallBase
 	{
 		$configuration->addPersistentEntry('Change/Events/BlockManager/Project_Gist', '\Project\Gist\Blocks\Listeners');
 		$configuration->addPersistentEntry('Rbs/Mail/Events/MailManager/Project_Gist', '\Project\Gist\Mail\Listeners');
+
+		$configuration->addPersistentEntry('Change/Events/CollectionManager/Project_Gist', '\Project\Gist\Collection\Listeners');
+
+		$configuration->addPersistentEntry('Rbs/Commerce/Events/CartManager/Project_Gist', '\Project\Gist\Events\CartManager\Listeners');
 	}
 
 	/**
